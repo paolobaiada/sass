@@ -4,10 +4,17 @@
 .exercise-title {
   text-align: center; }
 
-article p {
+.exercise article:nth-child(even) {
   color: red;
   font-size: 1rem;
-  border: 1px solid green; }
+  border: 1px solid green;
+  text-align: center; }
+
+.exercise article:nth-child(odd) {
+  color: blue;
+  font-size: 1rem;
+  border: 1px solid green;
+  text-align: center; }
 
 .exercise-title {
   color: green;
@@ -21,7 +28,7 @@ article p {
 
 .footer article p {
   color: green;
-  font-size: 1rem;
+  font-size: 24px;
   border: 1px solid blue;
   padding: 20px; }
 

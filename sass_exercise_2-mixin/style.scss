@@ -12,9 +12,14 @@ color: $color;
 font-size: $font-size;
 border: 1px solid $border-color;
 }
-article p{
-  @include article-card(red,green,1rem)
+.exercise article:nth-child(even){
+  @include article-card(red,green,1rem);
+  text-align:center;
 }
+.exercise article:nth-child(odd){
+    @include article-card(blue,green,1rem);
+    text-align:center;
+  }
 .exercise-title{
     color: $green;
     text-decoration: underline;
@@ -26,6 +31,6 @@ article p{
     padding: 10px
 }
 .footer article p{
-    @include article-card($green,$blue,1rem);
+    @include article-card($green,$blue,24px);
     padding:20px;
 }
