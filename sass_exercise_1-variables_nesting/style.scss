@@ -1,0 +1,29 @@
+$colore-primary: red;
+$color-ternary: green;
+.exercise-container{
+    border: 1px solid $colore-primary;
+    padding: 20px;
+}
+.exercise{
+    display: flex;
+    border: 1px solid $color-ternary;
+}
+
+.exercise-title{
+    text-align: center;
+    color: $color-ternary;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-underline-offset: 10px;
+}
+.exercise article{
+    @extend .exercise;
+    padding: 20px;
+    text-align: center;
+}
+.exercise:nth-child(odd){
+    color:blue ;
+}
+.exercise:nth-child(even){
+    color:red ;
+}

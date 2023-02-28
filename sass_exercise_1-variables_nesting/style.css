@@ -1,0 +1,26 @@
+.exercise-container {
+  border: 1px solid red;
+  padding: 20px; }
+
+.exercise, .exercise article {
+  display: flex;
+  border: 1px solid green; }
+
+.exercise-title {
+  text-align: center;
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 10px; }
+
+.exercise article {
+  padding: 20px;
+  text-align: center; }
+
+.exercise:nth-child(odd), .exercise article:nth-child(odd) {
+  color: blue; }
+
+.exercise:nth-child(even), .exercise article:nth-child(even) {
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */
