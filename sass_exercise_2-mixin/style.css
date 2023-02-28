@@ -1,0 +1,28 @@
+.exercise {
+  display: flex; }
+
+.exercise-title {
+  text-align: center; }
+
+article p {
+  color: red;
+  font-size: 1rem;
+  border: 1px solid green; }
+
+.exercise-title {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 6px; }
+
+.exercise-container {
+  border: 1px solid red;
+  padding: 10px; }
+
+.footer article p {
+  color: green;
+  font-size: 1rem;
+  border: 1px solid blue;
+  padding: 20px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+$blue: blue;
+$red: red;
+$green: green;
+.exercise{
+    display: flex;
+}
+.exercise-title{
+    text-align: center;
+}
+@mixin article-card($color,$border-color,$font-size){
+color: $color;
+font-size: $font-size;
+border: 1px solid $border-color;
+}
+article p{
+  @include article-card(red,green,1rem)
+}
+.exercise-title{
+    color: $green;
+    text-decoration: underline;
+    text-decoration-color: $blue;
+    text-underline-offset: 6px;
+}
+.exercise-container{
+    border: 1px solid red;
+    padding: 10px
+}
+.footer article p{
+    @include article-card($green,$blue,1rem);
+    padding:20px;
+}
