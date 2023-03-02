@@ -1,0 +1,9 @@
+$color:red;
+ $blue:blue;
+$border-color:green;
+
+$font-size:variables(1);
+ @function variables ($number){
+    $remValue:($number/16) + rem;
+    @return $remValue;
+}  

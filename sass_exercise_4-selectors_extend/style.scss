@@ -1,0 +1,52 @@
+@use "module";
+.exercise-container{
+    border: 1px solid module.$color;
+    padding: module.variables(10);
+
+    &-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         }
+}
+ .exercise{
+    display: flex;
+    
+  &-footer p{
+    color: module.$border-color;
+    border: module.variables(1)solid module.$blue;
+    padding:module.variables(20);
+    font-size: module.variables(24);
+    text-align: center;
+} 
+}
+
+
+h1{
+    color: module.$color;
+    text-decoration: underline;
+    text-decoration-color: module.$blue;
+    text-underline-offset: module.variables(6);
+   
+}
+h2{
+    @extend h1;
+    padding: 1rem;
+    border:1px solid module.$color;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.exercise article:nth-child(even){
+ color: module.$color;
+ border: module.variables(1) solid module.$border-color;
+  font-size: module.variables(24);
+  text-align:center;
+}
+.exercise article:nth-child(odd){
+   color:  module.$blue;
+    border: module.variables(1) solid module.$border-color;
+    font-size:  module.variables(24);
+    text-align:center;
+  }
