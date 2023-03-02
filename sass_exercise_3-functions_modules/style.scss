@@ -1,0 +1,37 @@
+@use "module";
+ .exercise{
+    display: flex;
+}
+
+.exercise-title{
+    text-align: center;
+}
+
+.exercise article:nth-child(even){
+ color: module.$color;
+ border: module.variables(1) solid module.$border-color;
+  font-size: module.variables(24);
+  text-align:center;
+}
+.exercise article:nth-child(odd){
+   color:  module.$blue;
+    border: module.variables(1) solid module.$border-color;
+    font-size:  module.variables(24);
+    text-align:center;
+  }
+.exercise-title{
+    color: module.$color;
+    text-decoration: underline;
+    text-decoration-color: module.$blue;
+    text-underline-offset: module.variables(6);
+}
+.exercise-container{
+    border: 1px solid module.$color;
+    padding: module.variables(10);
+}
+.footer article p{
+   color: module.$color;
+    border: 1px module.$blue;
+    padding:module.variables(20);
+    font-size: module.variables(24);
+} 

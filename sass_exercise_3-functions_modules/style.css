@@ -1,0 +1,42 @@
+.exercise {
+  display: flex;
+}
+
+.exercise-title {
+  text-align: center;
+}
+
+.exercise article:nth-child(even) {
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.exercise article:nth-child(odd) {
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.exercise-title {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 0.375rem;
+}
+
+.exercise-container {
+  border: 1px solid red;
+  padding: 0.625rem;
+}
+
+.footer article p {
+  color: red;
+  border: 1px blue;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
