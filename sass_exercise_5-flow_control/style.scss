@@ -1,4 +1,4 @@
-@use "module";
+@use"module";
 .exercise-container{
     border: 1px solid module.$color;
     padding: module.variables(10);
@@ -53,14 +53,30 @@ h2{
 .boxes{
   display: flex;
   justify-content: space-between;
+  margin-top: module.variables(15);
 }
-.boxes div{
-  width: module.variables(45);
+
+
+@for $i from 1 through 19{
+  .boxes div:nth-child(#{$i}) {
+    width: module.variables(45);
   height: module.variables(45);
-}
-@for $i from 1 through 8{
-  .fs-#{$i}{
-    background-color:blue ;
+  border: 1px solid module.$color;
+  background-color:darken(#ffffff,$i * 5%);
+  color: lighten(#000000, $i * 5%);
   }
-  
+
+  @if $i == 10{
+    .boxes div:nth-child(#{$i}){
+      color: module.$color;
+      background-color: module.$blue ;
+    }
+  }
+}
+$sizes: 1rem, 2rem, 3rem;
+@each $size in $sizes {
+.fs-#{$size}{
+  font-size: $size;
+    
+}
 }

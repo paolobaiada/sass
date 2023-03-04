@@ -2,8 +2,7 @@ $color:red;
  $blue:blue;
 $border-color:green;
 
-$font-size:variables(&number);
- @function variables ($number){
+  @function variables($number){
     $remValue:($number/16) + rem;
     @return $remValue;
-}  
+}   
